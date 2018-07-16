@@ -1,4 +1,4 @@
-package com.jm2070618.learn.jdbc.dml;
+package com.jm2070618.learn.jdbc.dml.stmt;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
