@@ -19,7 +19,8 @@ public class CreateTable {
 			Statement stmt = con.createStatement();
 			// 3. execute the statement
 
-			boolean val = stmt.execute("CREATE TABLE JM2070618_JDBC(ID NUMBER, NAME VARCHAR)");
+//			boolean val = stmt.execute("CREATE TABLE JM2070618_JDBC(ID NUMBER, NAME VARCHAR)");
+			boolean val = stmt.execute("CREATE TABLE JM2070618_JDBC_IMG(NAME VARCHAR, IMAGE BLOB)");
 			if (!val) {
 				System.out.println("Table is created successfully!");
 			}
