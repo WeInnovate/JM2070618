@@ -1,4 +1,4 @@
-package com.jm2070618.learn.annotation.custom.nocomment;
+package com.jm2070618.learn.annotation.custom.classinfo;
 
 import static java.lang.annotation.ElementType.TYPE;
 import static java.lang.annotation.RetentionPolicy.RUNTIME;

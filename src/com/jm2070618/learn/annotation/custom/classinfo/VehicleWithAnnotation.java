@@ -1,4 +1,4 @@
-package com.jm2070618.learn.annotation.custom.nocomment;
+package com.jm2070618.learn.annotation.custom.classinfo;
 
 @ClassInfo(author = "Atul", createdOn = "09/08/2018", version = 1)
 public class VehicleWithAnnotation {
