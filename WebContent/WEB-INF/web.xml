@@ -11,4 +11,9 @@
     <servlet-name>greet</servlet-name>
     <url-pattern>/greetMe</url-pattern>
   </servlet-mapping>
+  
+  <context-param>
+  <param-name>institute</param-name>
+  <param-value>My Institute</param-value>
+  </context-param>
 </web-app>
