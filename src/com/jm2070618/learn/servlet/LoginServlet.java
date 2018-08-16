@@ -19,12 +19,13 @@ public class LoginServlet extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
+		System.out.println("doGet of Login servlet is running...");
 		response.sendRedirect("login.html");
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		
+		System.out.println("doPost of Login servlet is running...");
 		String username = request.getParameter("username");
 		String password = request.getParameter("password");
 
@@ -34,8 +35,9 @@ public class LoginServlet extends HttpServlet {
 			request.setAttribute("msg", "Login Successfull!!!");
 			rd.forward(request, response);
 		} else {
-//			out.print("Login failed");
-			response.sendRedirect("http://www.google.com");
+			out.print("Login failed");
+//			response.sendRedirect("http://www.google.com");
+			
 		}
 	}
 
