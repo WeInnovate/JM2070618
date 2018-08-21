@@ -40,7 +40,9 @@ public class ProfileServlet extends HttpServlet {
 			throws ServletException, IOException {
 		System.out.println("doPost of ProfileServlet");
 		PrintWriter out = response.getWriter();
+		request.setAttribute("msg", "You are logged in successfully!!!");
 		String message = (String)request.getAttribute("msg");
+		request.removeAttribute("msg");
 		out.println(message+"\nHello, " + request.getParameter("username"));
 	}
 }
