@@ -7,7 +7,8 @@
 <title>Welcome to JSP</title>
 </head>
 <body>
-<%@ include file="header.jsp" %>
+<%-- <%@ include file="header.jsp" %> --%>
+<jsp:include page="header.jsp"></jsp:include>
 
 
 <h1>This is JSP page!!!</h1>
@@ -16,8 +17,10 @@
 <a href="registration.jsp">Register Me</a><br />
 
 <h1>JSP Magic</h1>
-<a href="impObj">Implicit Object</a>
+<a href="impObj">Implicit Object</a> <br />
+<a href="intentional-exception.jsp">Intentional Exception for errorPage and isErrorPage directive</a>
 
-<%@ include file="footer.jsp" %>
+<%-- <%@ include file="footer.jsp" %> --%>
+<jsp:include page="footer.jsp"></jsp:include>
 </body>
 </html>
