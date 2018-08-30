@@ -9,5 +9,6 @@
 <body>
 <%= "Hello, "+request.getParameter("username") %><br />
 <%= request.getAttribute("msg") %>
+<%= request.getParameter("trainee") %>
 </body>
 </html>

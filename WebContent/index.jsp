@@ -18,8 +18,10 @@
 
 <h1>JSP Magic</h1>
 <a href="impObj">Implicit Object</a> <br />
-<a href="intentional-exception.jsp">Intentional Exception for errorPage and isErrorPage directive</a>
-
+<a href="intentional-exception.jsp">Intentional Exception for errorPage and isErrorPage directive</a><br />
+<a href="login.jsp">Login via JSP</a><br />
+<a href="registration.jsp">Register via JSP</a><br />
+<a href="user-registration.jsp">Register User via JSP</a><br />
 <%-- <%@ include file="footer.jsp" %> --%>
 <jsp:include page="footer.jsp"></jsp:include>
 </body>

@@ -3,7 +3,9 @@
 	if (request.getParameter("username").equalsIgnoreCase(request.getParameter("password"))) {
 		request.setAttribute("msg", "Login Successfull!!!");
 %>
-<jsp:forward page="profile.jsp" />
+<jsp:forward page="profile.jsp">
+<jsp:param value="Prateek" name="trainee"/>
+</jsp:forward>
 <%
 	} else {
 		request.setAttribute("msg", "Login Failed!!!");
