@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+    <%@ page isELIgnored="false" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,8 +8,8 @@
 <title>Profile!!!</title>
 </head>
 <body>
-<%= "Hello, "+request.getParameter("username") %><br />
-<%= request.getAttribute("msg") %>
-<%= request.getParameter("trainee") %>
+<span>Hi, ${param.username}</span><br />
+${requestScope.msg}<br />
+${param.trainee}
 </body>
 </html>

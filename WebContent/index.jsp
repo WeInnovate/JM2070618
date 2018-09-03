@@ -22,6 +22,9 @@
 <a href="login.jsp">Login via JSP</a><br />
 <a href="registration.jsp">Register via JSP</a><br />
 <a href="user-registration.jsp">Register User via JSP</a><br />
+
+<h1>Expression Language - EL</h1>
+<a href="register-to-learn-el.jsp">EL Example</a>
 <%-- <%@ include file="footer.jsp" %> --%>
 <jsp:include page="footer.jsp"></jsp:include>
 </body>
