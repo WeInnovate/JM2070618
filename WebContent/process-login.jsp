@@ -1,14 +1,14 @@
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 
-<%
-	if (request.getParameter("username").equalsIgnoreCase(request.getParameter("password"))) {
-		request.setAttribute("msg", "Login Successfull!!!");
-%>
-<jsp:forward page="profile.jsp">
-<jsp:param value="Prateek" name="trainee"/>
-</jsp:forward>
-<%
-	} else {
-		request.setAttribute("msg", "Login Failed!!!");
-		response.sendRedirect("login.jsp?msg=Login%20Failed!!!");
-	}
-%>
+<c:if test="${param.username eq param.password}">
+	<c:set var="msg" value="Login Successfull!!" scope="request" />
+	<c:set var="age" value="22" scope="request" />
+	<jsp:forward page="profile.jsp">
+		<jsp:param value="Prateek" name="trainee" />
+	</jsp:forward>
+</c:if>
+
+<c:if test="${param.username ne param.password}">
+	<c:set var="msg" value="Login Failed!!!" scope="request" />
+	<c:redirect url="login.jsp?msg=Login%20Failed!!!" />
+</c:if>
